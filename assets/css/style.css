@@ -1,0 +1,295 @@
+html, body {
+	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/bg.jpg') center center no-repeat;
+    margin: 0;
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #141516;
+    font-family: 'Barlow', sans-serif;
+}
+
+#header {
+    background-color: white;
+}
+
+#header .nav-logo {
+    text-transform: uppercase;
+    font-family: 'Lobster', cursive;
+    color: crimson;
+}
+
+#header a {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: ease 0.3s;
+    text-transform: uppercase;
+}
+
+#header a:hover, #header .active {
+    color: crimson;
+}
+
+#cover {
+    color: white;
+}
+
+#cover h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+#cover p {
+    font-size: 1.5em;
+}
+
+#cover .cover-btn{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: ease-in-out 0.2s;
+}
+
+#cover .cover-btn:hover {
+    border-radius: 16px;
+}
+
+#main {
+    background-color: white;
+}
+
+#main .col, #main-second iframe {
+    margin: 4vw 0;
+}
+
+#main .cusImg {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#main .intImg {
+    width: 30%;
+    height: auto;
+    margin: 0 5%;
+}
+
+#main h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#main .t-h5 {
+    margin-top: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#main-second {
+    background-color: crimson;
+}
+
+#main-second h2 {
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+#main-second .menu-btn {
+    font-size: 10vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: ease-in-out 0.2s;
+    margin: 10% 0;
+    border-width: 0.5rem;
+}
+
+#main-second .menu-btn:hover {
+    color: crimson;
+}
+
+.kontakt h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card {
+    margin: 1%;
+}
+
+.card h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#footer {
+    color: black;
+    background-color: whitesmoke;
+}
+
+#footer p {
+    margin: 10% 0 5% 0;
+}
+
+#footer a {
+    color: crimson;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: firebrick;
+    font-weight: bold;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.divider-up {
+    padding-bottom: 100px;
+}
+
+.divider-down {
+    padding-top: 100px;
+}
+
+.divider-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.divider-arrow svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 56px;
+}
+
+.divider-arrow .shape-fill {
+    fill: #FFFFFF;
+}
+
+.wave-up {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-up svg {
+    position: relative;
+    display: block;
+    width: calc(121% + 1.3px);
+    height: 102px;
+    transform: rotateY(180deg);
+}
+
+.wave-up .shape-fill {
+    fill: #FFFFFF;
+}
+
+.wave-down {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-down svg {
+    position: relative;
+    display: block;
+    width: calc(156% + 1.3px);
+    height: 150px;
+}
+
+.wave-down .shape-fill {
+    fill: #FFFFFF;
+}
+
+.wave-up-red, .wave-up-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-up-red svg, .wave-up-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 73px;
+}
+
+.wave-up-red .shape-fill {
+    fill: #DC143C;
+}
+
+.wave-up-2 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.menu-divider {
+    margin-top: 10%;
+}
+
+#cover .cover-divide-home {
+    padding: 15% 0;
+}
+
+#cover .cover-divide {
+    padding: 15% 0;
+}
+
+@media(max-width: 640px) {
+    section.divider {
+        padding: 64px 0;
+    }
+
+    #main .intImg {
+        width: 50%;
+        height: auto;
+        margin: 0 5%;
+    }
+
+    #footer.divider {
+        padding-bottom: 16px;
+    }
+
+    #cover .cover-divide {
+        padding: 64px 0;
+    }
+}
+
+@media(min-width: 641px) 
+	and (max-width: 1007px) {
+    section.divider {
+        padding: 64px 0;
+    }
+
+    #main .intImg {
+        width: 50%;
+        height: auto;
+        margin: 0 5%;
+    }
+
+    #footer.divider {
+        padding-bottom: 16px;
+    }
+
+    #cover .cover-divide {
+        padding: 48px 0;
+    }
+}
